@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Rinze=/luci-static/Rinze
+	set luci.main.mediaurlbase=/luci-static/Rinze
+	commit luci
+EOF
+exit 0
